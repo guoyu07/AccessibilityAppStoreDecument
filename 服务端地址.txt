@@ -1,0 +1,5 @@
+http://localhost:8080/android/rest/v1.0/findappsec/downLoadApp.do?package=aaa
+
+http://localhost:8080/android/rest/v1.0/appclassifytag.do
+
+http://115.29.11.17:8093/android/rest/v1.0/appclassifytag.do
