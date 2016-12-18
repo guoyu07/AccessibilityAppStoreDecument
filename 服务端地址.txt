@@ -1,5 +1,42 @@
-http://localhost:8080/android/rest/v1.0/findappsec/downLoadApp.do?package=aaa
+﻿-----------------外网服务器-----------------------------
+//下载应用
+http://115.29.11.17:8094/android/rest/v1.0/findappsec/downLoadApp.do
+params.put("packageName", "com.tencent.mobileqq");
+params.put("versionName","6.2.0");
 
-http://localhost:8080/android/rest/v1.0/appclassifytag.do
 
-http://115.29.11.17:8093/android/rest/v1.0/appclassifytag.do
+http://115.29.11.17:8094/android/rest/v1.0/findappsec/appclassifytag.do
+params.put("tag", "热门APP");
+params.put("pageNo", 1 + "");
+params.put("mobileModel", "");
+
+//排行榜
+http://115.29.11.17:8094/android/rest/v1.0/findappsec/topChartsApp.do
+
+http://115.29.11.17:8094/android/rest/v1.0/findappsec/userCommentApp.do
+params.put("userName", "admin");
+params.put("packageId", "50");
+params.put("versionName", "6.2.0");
+params.put("comment", "用户评论的内容");
+
+-----------------本机-----------------------------
+http://localhost:8080/android/rest/v1.0/findappsec/downLoadApp.do
+params.put("packageName", "com.tencent.mobileqq");
+params.put("versionName","6.2.0");
+
+
+http://localhost:8080/android/rest/v1.0/findappsec/appclassifytag.do
+params.put("tag", "热门APP");
+params.put("pageNo", 1 + "");
+params.put("mobileModel", "");
+
+//排行榜
+http://localhost:8080/android/rest/v1.0/findappsec/topChartsApp.do
+
+//用户评论
+http://localhost:8080/android/rest/v1.0/findappsec/userCommentApp.do
+params.put("userName", "admin");
+params.put("packageId", "50");
+params.put("versionName", "6.2.0");
+params.put("comment", "用户评论的内容");
+
