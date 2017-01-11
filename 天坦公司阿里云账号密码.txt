@@ -2,6 +2,10 @@
 密码：1QAZ2wsx
 连接密码：admin1
 登录：root qazwsx123
+登录：root yljj123
+
+Access Key ID：74rBtwkmNsAIedXF
+Access Key Secret：Nkwju9KO61ahJAOK9NDirCJT3Gf5Bx
 
 用户名：root    实例：115.29.11.17
 https://help.aliyun.com/knowledge_detail/38004.html

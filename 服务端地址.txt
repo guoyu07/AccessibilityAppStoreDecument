@@ -13,11 +13,18 @@ params.put("mobileModel", "");
 //排行榜
 http://115.29.11.17:8094/android/rest/v1.0/findappsec/topChartsApp.do
 
-http://115.29.11.17:8094/android/rest/v1.0/findappsec/userCommentApp.do
+//用户评论
+http://115.29.11.17:8094/android/rest/v1.0/findappsec/setUserCommentApp.do
 params.put("userName", "admin");
 params.put("packageId", "50");
 params.put("versionName", "6.2.0");
 params.put("comment", "用户评论的内容");
+params.put("score", "5");
+
+//获取评论列表，有用（用户名:userName,内容:comment，评论的时间:contentTime）
+http://115.29.11.17:8094/android/rest/v1.0/findappsec/getUserCommentApp.do
+params.put("packageId", "50");
+params.put("versionName", "6.2.0");
 
 -----------------本机-----------------------------
 http://localhost:8080/android/rest/v1.0/findappsec/downLoadApp.do
@@ -34,9 +41,14 @@ params.put("mobileModel", "");
 http://localhost:8080/android/rest/v1.0/findappsec/topChartsApp.do
 
 //用户评论
-http://localhost:8080/android/rest/v1.0/findappsec/userCommentApp.do
+http://localhost:8080/android/rest/v1.0/findappsec/setUserCommentApp.do
 params.put("userName", "admin");
 params.put("packageId", "50");
 params.put("versionName", "6.2.0");
 params.put("comment", "用户评论的内容");
+score 5
 
+//用户评论
+http://localhost:8080/android/rest/v1.0/findappsec/getUserCommentApp.do
+params.put("packageId", "50");
+params.put("versionName", "6.2.0");

@@ -1,0 +1,6 @@
+文件上传地址
+http://192.168.1.249:8098/cms/cms/admin/android_appsec/o_upload.do?mobileModel=&packageName=&versionName=&flag=1
+
+http://192.168.1.249:8098/cms/cms/admin/android_appsec/o_upload.do?mobileModel=all&packageName=com.xm.gorilla&versionName=1.9.8&flag=2
+
+http://192.168.1.249:8098/cms/cms/admin/android_appsec/o_save.do
