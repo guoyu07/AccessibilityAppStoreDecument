@@ -10,3 +10,5 @@ Access Key Secret：Nkwju9KO61ahJAOK9NDirCJT3Gf5Bx
 用户名：root    实例：115.29.11.17
 https://help.aliyun.com/knowledge_detail/38004.html
 /dev/xsdb
+
+Ubuntu 管理终端连接密码： 193889
