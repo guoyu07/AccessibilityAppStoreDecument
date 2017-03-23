@@ -1,6 +1,7 @@
 ﻿-----------------外网服务器-----------------------------
 //下载应用
 http://115.29.11.17:8094/android/rest/v1.0/findappsec/downLoadApp.do
+http://appstore.tatans.cn/android/rest/v1.0/findappsec/appclassifytag.do
 params.put("packageName", "com.tencent.mobileqq");
 params.put("versionName","6.2.0");
 
