@@ -1,21 +1,21 @@
 ﻿-----------------外网服务器-----------------------------
 //下载应用
-http://115.29.11.17:8094/android/rest/v1.0/findappsec/downLoadApp.do
-http://appstore.tatans.cn/android/rest/v1.0/findappsec/appclassifytag.do
+http://appstore.tatans.cn/android/rest/v1.0/findappsec/update.do
 params.put("packageName", "com.tencent.mobileqq");
-params.put("versionName","6.2.0");
+返回响应：
+[{"id":50,"appName":"QQ","decription":"乐在沟通，16年聊天欢乐8亿人。\r\n","packageName":"com.tencent.mobileqq","versionCode":496,"versionName":"6.7.0","size":"27.44"}]
 
-
-http://115.29.11.17:8094/android/rest/v1.0/findappsec/appclassifytag.do
+//推荐应用
+http://appstore.tatans.cn/android/rest/v1.0/findappsec/appclassifytag.do
 params.put("tag", "热门APP");
 params.put("pageNo", 1 + "");
 params.put("mobileModel", "");
 
 //排行榜
-http://115.29.11.17:8094/android/rest/v1.0/findappsec/topChartsApp.do
+http://appstore.tatans.cn/android/rest/v1.0/findappsec/topChartsApp.do
 
 //用户评论
-http://115.29.11.17:8094/android/rest/v1.0/findappsec/setUserCommentApp.do
+http://appstore.tatans.cn/android/rest/v1.0/findappsec/setUserCommentApp.do
 params.put("userName", "admin");
 params.put("packageId", "50");
 params.put("versionName", "6.2.0");
@@ -23,14 +23,18 @@ params.put("comment", "用户评论的内容");
 params.put("score", "5");
 
 //获取评论列表，有用（用户名:userName,内容:comment，评论的时间:contentTime）
-http://115.29.11.17:8094/android/rest/v1.0/findappsec/getUserCommentApp.do
+http:/appstore.tatans.cn/android/rest/v1.0/findappsec/getUserCommentApp.do
 params.put("packageId", "50");
 params.put("versionName", "6.2.0");
+
+//更新应用
+http://appstore.tatans.cn/android/rest/v1.0/findappsec/appclassifytag.do
+params.put("packageName", "com.tencent.mobileqq");
+params.put("versionName","6.2.0");
 
 -----------------本机-----------------------------
 http://localhost:8080/android/rest/v1.0/findappsec/downLoadApp.do
 params.put("packageName", "com.tencent.mobileqq");
-params.put("versionName","6.2.0");
 
 
 http://localhost:8080/android/rest/v1.0/findappsec/appclassifytag.do
